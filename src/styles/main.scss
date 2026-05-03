@@ -684,40 +684,6 @@ li {
   margin-top: 10px !important;
 }
 
-.footer{
-  width: 100%;
-  text-align: center;
-  padding: 25px 9px;
-  margin-top: 60px;
-  font-size: 12px !important;
-  font-weight: 300 !important;
-  font-family: "Inter", sans-serif;
-  letter-spacing: 1.5px;
-  color: rgba(203, 213, 225, 0.7);
-  border-top: 1px solid rgba(148, 163, 184, 0.12);
-  background: linear-gradient(
-    to top,
-    rgba(15, 23, 42, 0.6),
-    transparent
-  );
-}
-
-.dots {
-  display: none;
-}
-.dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: rgba(148, 163, 184, 0.4);
-  transition: 0.3s;
-}
-
-.dot.active {
-  background: rgba(59, 130, 246, 0.9);
-  transform: scale(1.2);
-}
-
 /* =====================
    ANIMATIONS
 ===================== */
@@ -762,6 +728,23 @@ li {
   }
 }
 
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 25px 9px;
+  margin-top: 60px;
+  font-size: 12px !important;
+  font-weight: 300 !important;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 1.5px;
+  color: rgba(203, 213, 225, 0.7);
+  border-top: 1px solid rgba(148, 163, 184, 0.12);
+  background: linear-gradient(
+    to top,
+    rgba(15, 23, 42, 0.6),
+    transparent
+  );
+}
 
 /* =====================
    MEDIA QUERIES
@@ -865,12 +848,5 @@ li {
   .case-media{
     position: relative;
     top: auto;
-  }
-
-  .dots {
-    display: flex;
-    justify-content: center;
-    gap: 6px;
-    margin-top: 12px;
   }
 }
