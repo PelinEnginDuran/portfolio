@@ -112,11 +112,11 @@ li {
 
 
 .contact {
-  min-height: 100vh;
+   flex: 1;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-
   gap: var(--space-xl);
   padding: var(--space-xl) 20px;
 }
@@ -355,7 +355,7 @@ li {
 .hero {
   padding: 90px 0 40px;
   position: relative;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .hero::before {
@@ -673,6 +673,9 @@ li {
 
 
 .nav-arrows .prev {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -740,7 +743,6 @@ li {
   width: 100%;
   text-align: center;
   padding: 25px 9px;
-  margin-top: 60px;
   font-size: 12px !important;
   font-weight: 300 !important;
   font-family: "Inter", sans-serif;

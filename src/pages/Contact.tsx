@@ -131,8 +131,7 @@ export default function Contact({ lang }: Props) {
           </div>
         </a>
 
-        <a
-          className="info-item"
+        <a className="info-item"
           href="https://www.google.com/maps/place/Tekirdağ"
           target="_blank"
         >
@@ -143,8 +142,7 @@ export default function Contact({ lang }: Props) {
           </div>
         </a>
 
-        <a
-          className="info-item"
+        <a className="info-item"
           href="https://github.com/PelinEnginDuran"
           target="_blank"
         >
@@ -155,8 +153,7 @@ export default function Contact({ lang }: Props) {
           </div>
         </a>
 
-        <a
-          className="info-item"
+        <a className="info-item"
           href="https://www.linkedin.com/in/pelin-engin-duran-760580231/"
           target="_blank"
         >
