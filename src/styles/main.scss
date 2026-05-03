@@ -673,9 +673,6 @@ li {
 
 
 .nav-arrows .prev {
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -818,7 +815,7 @@ li {
     flex: unset;
   }
 
-  .image-wrapperimg {
+  .image-wrapper img {
     width: 200px;
     height: 200px;
   }
