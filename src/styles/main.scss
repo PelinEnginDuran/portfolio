@@ -287,14 +287,13 @@ li {
   font-size: 22px;
   font-weight: 600;
   letter-spacing: -0.5px;
+}
+.logo span {
+  color: #f9fafb;
+}
 
-  span {
-    color: #f9fafb;
-  }
-
-  .surname {
-    color: #2563eb;
-  }
+.logo .surname {
+  color: #2563eb;
 }
 
 .nav-links {
@@ -304,15 +303,15 @@ li {
   margin: 0;
   padding: 0;
 
-  a {
-    text-decoration: none;
-    color: #cbd5e1;
-    font-weight: 500;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #cbd5e1;
+  font-weight: 500;
+}
 
-    &.active {
-      color: #2563eb;
-    }
-  }
+.nav-links a.active {
+  color: #2563eb;
 }
 
 .hire-btn {
@@ -631,18 +630,32 @@ li {
 }
 
 .nav-arrows {
-  position: fixed;
-  top: 50%;
-  left: 0;
-  right: 0;
-  transform: translateY(-50%);
-  pointer-events: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 10px;
+  position: relative;
+  z-index: 10;
+}
 
+
+.nav-arrows button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(59, 130, 246, 0.15);
+  color: #e5e7eb;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav-arrows button:hover {
+  background: rgba(59, 130, 246, 0.3);
+  transform: translateY(-2px);
 }
 
 .nav-arrows a {
-  pointer-events: auto;
-  position: fixed;
+  display: inline-block;
   background: #2563eb;
   padding: 10px 14px;
   border-radius: 10px;
@@ -650,16 +663,14 @@ li {
   font-size: 16px;
   text-decoration: none;
   transition: 0.2s ease;
-  backdrop-filter: blur(8px);
-
-  &:hover {
-    background: #1e40af;
-    box-shadow: 0 0 20px rgba(37, 99, 235, 0.6);
-    transform: translateY(-2px);
-  }
-
-
 }
+
+.nav-arrows a:hover {
+  background: #1e40af;
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.6);
+  transform: translateY(-2px);
+}
+
 
 .nav-arrows .prev {
   left: 0;
@@ -849,4 +860,5 @@ li {
     position: relative;
     top: auto;
   }
+
 }
