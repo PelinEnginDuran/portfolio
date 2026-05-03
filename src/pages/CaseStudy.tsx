@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom"
 import { projects } from "../data/projects"
+import { Link } from "react-router-dom"
 
 interface Props{
   lang: "en" | "tr"
@@ -65,12 +66,12 @@ return (
       </section>
       <div className="nav-arrows">
         {hasPrev && (
-          <a href={`/case/${prevProject.id}`} className="prev">
-             ← Previous </a>
+          <Link to={`/case/${prevProject.id}`} className="prev">
+             ← Previous </Link>
         )}
              {hasNext && (
-              <a href={`/case/${nextProject.id}`} className="next">
-                 Next → </a>
+              <Link to={`/case/${nextProject.id}`} className="next">
+                 Next → </Link>
              )}
       </div>
       
