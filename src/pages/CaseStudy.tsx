@@ -9,7 +9,7 @@ interface Props{
 
 export default function CaseStudy({lang}: Props) {
   const { id } = useParams()
-  const currentIndex = projects.findIndex(p => p.id === id)
+  const currentIndex = projects.findIndex(p => String(p.id) === String(id))
   const nextProject = projects[currentIndex + 1]
   const prevProject = projects[currentIndex - 1]
   const hasNext = currentIndex < projects.length - 1
@@ -17,7 +17,7 @@ export default function CaseStudy({lang}: Props) {
 
 
 
-const project = projects.find((item) => item.id === id)
+const project = projects.find((item) => String(item.id) === String(id))
 
 if (!project) {
   return (
