@@ -7,7 +7,6 @@ interface Props {
 }
 
 
-
 export default function CaseStudy({ lang }: Props) {
   const { id } = useParams()
   const currentIndex = projects.findIndex(p => String(p.id) === String(id))
@@ -70,6 +69,7 @@ const data = project[lang]
           </div>
         </section>
         <div className="nav-arrows">
+          
           {hasPrev && prevProject && (
             <Link to={`/case/${prevProject.id}`} className="prev">
               ← Previous

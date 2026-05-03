@@ -7,6 +7,7 @@ import Contact from "./pages/Contact"
 import Navbar from "./components/Navbar"
 import { useState } from "react"
 import Footer from "./components/Footer"
+import ScrollToTop from "./components/ScrollToTop"
 
 function App() {
 const [lang, setLang] = useState<"en" | "tr">(() => {
@@ -20,6 +21,7 @@ const changeLang = (value: "en" | "tr") => {
   return (
     <BrowserRouter>
       <Navbar lang={lang} changeLang={changeLang} />
+       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home lang={lang} />}/>
         <Route path="/projects" element={<Projects lang={lang} />}/>
