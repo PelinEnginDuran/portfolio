@@ -120,7 +120,7 @@ export const projects: Project[] = [
 
 
     {
-        id: "ricky-morty-case",
+        id: "rick-morty-case",
         tech: ["React Native", "Expo", "TypeScript", "Zustand", "React Query", "NativeWind", "Rick & Morty API"],
 
 
