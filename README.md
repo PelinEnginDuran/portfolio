@@ -1,1 +1,1 @@
-🚀 Live Demo: https://portfolio-9z53lucm0-pelinengindurans-projects.vercel.app
+🚀 Live Demo: https://pelin-engin-duran.vercel.app
